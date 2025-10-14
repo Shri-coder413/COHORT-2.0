@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "grid-1 grid-2 grid-2 grid-2" "grid-1 grid-3 grid-4 grid-5";
+}
+
+.grid-1 {
+  grid-area: grid-1;
+  background-image: url("https://i.pinimg.com/736x/cb/19/66/cb19661c764a9804edbc6585e356c157.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5em;
+  padding: 0.2em;
+  border-radius: 1.2em;
+}
+
+.grid-2 {
+  display: flex;
+  justify-content: space-between;
+  grid-area: grid-2;
+  background-image: url("https://i.pinimg.com/1200x/22/3d/74/223d74f0ebe9d9b0b3ed032b74d04438.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0.5em;
+  padding: 0.2em;
+  border-radius: 1.2em;
+}
+
+.grid-3 {
+  grid-area: grid-3;
+  background-image: url("https://i.pinimg.com/1200x/6c/0f/f8/6c0ff86ecbcef20d6e0ef201bb529b6a.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.grid-4 {
+  grid-area: grid-4;
+  background-image: url("https://i.pinimg.com/736x/6a/01/48/6a01488d3fc0a363d6de8b092a415ceb.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.grid-5 {
+  grid-area: grid-5;
+  background-image: url("https://i.pinimg.com/736x/48/af/a8/48afa895078b71e395844ee34f52785d.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}/*# sourceMappingURL=style.css.map */
