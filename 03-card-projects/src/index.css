@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  color: #fff;
+  background-color:rgb(249, 155, 121);
+}
+
+.parent {
+  width: 100%;
+  height: 97vh;
+  display: flex;
+  padding: 1rem;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  min-height: 300px;
+  width: 280px;
+  background-color: #fff;
+  color: #111;
+  border-radius: 20px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in;
+}
+
+.card:hover{
+  scale:1.05;
+}
+.card .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.top img {
+  width: 50px;
+  height: 50px;
+  padding: 0.3rem;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+  object-fit: cover;
+}
+.top button {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 0.2rem;
+  border: 2px solid #dadada;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.top button:hover{
+  background-color: #dadada;
+}
+
+.card .center {
+  flex: 1;
+}
+.center h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.65rem;
+}
+.center span {
+  font-size: 0.75rem;
+  opacity: 0.3;
+}
+
+.center h2 {
+  white-space: nowrap;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #888;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  width: fit-content;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.center h4 {
+  width: fit-content;
+  background-color: #e6e6e6;
+  white-space: nowrap;
+  padding: 5px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+.center .tags {
+  display: flex;
+  gap: 10px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dadada;
+}
+
+.bottom button {
+  background-color: #222;
+  color: #fff;
+  padding: 0 15px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 0.7rem;
+  margin: 0.2rem 0;
+}
+.bottom h3 {
+  color: #222;
+  font-size: 1.2rem;
+}
+.bottom p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0.5;
+  margin-top: 0.2rem;
+}
